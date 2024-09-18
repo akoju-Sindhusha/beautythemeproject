@@ -7,12 +7,8 @@ html,body{
    width: auto !important;
    overflow-x: hidden !important;
    font-family: montserrat;
+   scroll-behavior: smooth;
 }
-
-/* .part1, .part2, .part3, .part4, .part5, .part6, .part7, 
-.part8, .part9, .part10, .part11, .part12, .part13, .part14{
-   border: 5px solid black;
-} */
 
 /*Part 1:-Nav*/
 .checkbtn {
@@ -27,36 +23,48 @@ html,body{
  }
 .img1{
    height: 9vh;
-   padding-left: 4%;
    padding-right: 4%;
+   position: fixed;
+   z-index: 1;
+   background-color: whitesmoke;
 }
 .nav-container{
-   color: white;
+   color: black;
    display: flex;
    height: 100vh;
    width: 100%;
-   background-image: url(image1.webp);
+   background-image: url("image1.webp");
    background-size: 100% 100%;
    background-repeat: no-repeat;
    overflow-x: hidden;
 }
 .ul-list {
-   padding: 2%;
+   padding: 1%;
+   gap: 3%;
    display: flex;
-   gap: 7%;  
    list-style: none; 
    width: 100%; 
+   position: fixed;
+   z-index: 1;
+   font-size: large;
+   margin-left: 7%;
+   background-color: whitesmoke;
+   height: 9vh;
 }
 .ul-list a{
    text-decoration: none;
-   color: white;
+   color: black;
 }
 .ul-list a:hover{
    color: pink;
 }
+.part1{
+   background-color: white;
+}
+
 /*animation*/
 .nav-content{
-   padding-top: 38%;
+   padding-top: 40%;
    color: white;
    font-family: playfair display;
    width: 100%;
@@ -351,7 +359,7 @@ font-size: 70px;
 
 /*part 12*/
 .part12{
-   height: 80vh;
+   height: 70vh;
 }
 iframe{
    width: 100%;
@@ -364,10 +372,11 @@ iframe{
    background-image: url(mapimage.png);
    background-repeat: no-repeat;
    background-size: cover;
-   height: 120vh;
+   height: 100vh;
+   padding-bottom: 4%;
 }
 
-.heading12{
+.heading13{
    font-size: 60px;
    font-weight: 800;
    font-family: playfair display;
@@ -376,31 +385,39 @@ iframe{
 .part13{
     display: flex;
     margin: 5%;
-    padding: 5%;
+    padding: 4%;
     background-color: white;
     top: 0;
+    height: 90vh;
+    
+    margin: -11%;
+    position: relative;
+    z-index: 1;
+    margin-left: 12%;
+    margin-right: 12%;
+  
 }
-.left12{
+.left13{
    width: 100%;
 } 
-.right12{
-   line-height: 8vh;
+.right13{
+   line-height: 5vh;
    width: 100%;
 }
 .one{
    width: 80%;
 }
-.right12 button{
+.right13 button{
    width: 20%;
 }
-.right12 button:hover{
+.right13 button:hover{
    background-color: pink;
 }
 /* part-14 footer */
 
 .footer-image{
    height: 10vh;
-   margin-top: 5%;
+   margin-top: 70%;
    margin-right: -4%;
 }
 footer{
@@ -412,8 +429,9 @@ footer{
 }
 .para1{
    width: 100%;
-   padding-top: 4%;
+   padding-top: 12%;
 }
+
 
 /* media queries for the website*/
 @media only screen and (width<576px) {
@@ -422,10 +440,12 @@ footer{
    }
    /*part 1 MQ*/
    .checkbtn {
+      position: fixed;
       display: block;
       order: 1;
-      margin-right: 20px;
-      float: right;
+      margin-left: 90%;
+      z-index: 1;
+      color: pink;
     }
     .ul-list li{
       margin-top: -5%;
@@ -434,20 +454,27 @@ footer{
       display: none;
    }
    ul {
+      padding-top: 2%;
       position: fixed;
       top: 10%;
       right: -100%;
       width: 100%;
-      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       transition: all 0.3s;
-      color: white;
-      background-color: rgb(74, 73, 73);
     }
-  
+    .ul-list {
+      gap: 3%;
+      width: 100%; 
+      position: fixed;
+      z-index: 1;
+      font-size: large;
+      margin-left: 7%;
+      background-color: whitesmoke;
+      height: 90vh;
+   }
     ul li {
       margin: 20px 0;
     }
@@ -460,6 +487,9 @@ footer{
     }
     .nav-content{
       margin-top: 100vh;
+    }
+    .img1{
+      background-color: transparent;
     }
     
    /*part2 MQ*/
@@ -595,8 +625,7 @@ footer{
    font-size: 50px;
 }
 
-
-/*part 11*/
+/*part 11 MQ*/
 .part11{
    height: 200vh;
    width: 100%;
@@ -622,30 +651,44 @@ padding-top: 5%;
 .layout-container{
    display: flex;
    flex-direction: column;
-  
 }
-
 .p11-para1{
 font-size: small;
 }
 
-/* part 13 */
+
+/* part 13 MQ*/
 .part13{
    flex-direction: column;
+   height: 150vh;
 }
 .gradient-img{
-   background-image: url(mapimage.png);
+   background-image: url("mapimage.png");
    background-repeat: no-repeat;
    background-size: cover;
    height: 200vh;
 }
-/* part-14 footer */
+/* part-14 footer  MQ*/
 
 .footer-image{
    height: 10vh;
-   margin-top: 5%;
-   margin-left: 19%;
+   margin-top: 70%;
+   margin-left: 100%;
+}
+footer{
+   display: flex;
    justify-content: center;
+   height: 20vh;
+   width: 100%;
+}
+.para1{
+   width: 100%;
+   padding-top: 10%;
+}
+footer{
+   padding-right: 36%;
+}
 }
 
-}
+
+
