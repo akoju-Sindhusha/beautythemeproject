@@ -22,7 +22,7 @@ html,body{
    display: none;
  }
 .img1{
-   height: 9vh;
+   height: 8vh;
    padding-right: 4%;
    position: fixed;
    z-index: 1;
@@ -49,7 +49,7 @@ html,body{
    font-size: large;
    margin-left: 7%;
    background-color: whitesmoke;
-   height: 9vh;
+   height: 8vh;
 }
 .ul-list a{
    text-decoration: none;
@@ -491,7 +491,7 @@ footer{
     .img1{
       background-color: transparent;
     }
-    
+
    /*part2 MQ*/
    .grid-container{
       display: flex;
